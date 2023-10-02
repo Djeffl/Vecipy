@@ -1,0 +1,7 @@
+{
+  "name": "Vecipy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
