@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+      "id": "441d3329-b402-45a3-b477-1b0e8b36f6af",
+      "title": "Hete Bliksem",
+      "score": 8,
+      "scoreTotal": 10,
+      "preperationTimeInMinutes": 30
+    },
+    {
+      "id": "a825b8f1-7008-46bb-9182-18a0f5ac3bd5",
+      "title": "Pasta Carbonara",
+      "score": 8.5,
+      "scoreTotal": 10,
+      "preperationTimeInMinutes": 15
+    },
+    {
+      "id": "da68e37e-0d42-40df-a0ef-0d7c2093a78e",
+      "title": "Kip & Rijst",
+      "preperationTimeInMinutes": 15,
+      "score": 6,
+      "scoreTotal": 10
+    }
+  ]
+}

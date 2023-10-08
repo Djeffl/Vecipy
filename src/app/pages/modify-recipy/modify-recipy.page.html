@@ -1,0 +1,65 @@
+<form [formGroup]="recipyForm" (ngSubmit)="onSubmit()">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>Add Recipy</ion-title>
+      <ion-buttons slot="start">
+        <ion-button (click)="goRecipyHome()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-list>
+      <ion-item>
+        <ion-input
+          label="Title"
+          placeholder="Bacon & Eggs"
+          formControlName="title"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Description"
+          placeholder="Baked bacon & eggs served with bread"
+          formControlName="description"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-range
+          aria-label="Score"
+          [pin]="true"
+          [pinFormatter]="pinFormatter"
+          [min]="0"
+          [max]="10"
+          [ticks]="true"
+          [snaps]="true"
+          formControlName="score"
+        >
+          <p slot="label">Score</p>
+          <p slot="start">0</p>
+          <p slot="end">10</p>
+        </ion-range>
+        <!-- <ion-input label="Score (max. 10)" placeholder="8.5"> </ion-input> -->
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Prep. Time (minutes)"
+          placeholder="30"
+          formControlName="prepTime"
+        ></ion-input>
+      </ion-item>
+      <!-- <ion-item>
+    Picture
+  </ion-item> -->
+      <!-- <ion-item>
+        <ion-input multiple="true" type="email"></ion-input>
+      </ion-item> -->
+    </ion-list>
+  </ion-content>
+</form>
